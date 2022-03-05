@@ -76,7 +76,7 @@ body{
     margin-left: 60%;
 }
 .sizeLien{
-    width: 140px;
+    width: 200px;
     height: 99px;
 }
 .colorLien2{
@@ -85,8 +85,12 @@ body{
 .bordureNav{
     border-top: 1px solid transparent;
 }
-.bordurNav:hover > a{
-    color: #0065fc;
+.bordureNav:hover{
+    border-top: 1px solid #0065fc;
+    cursor: pointer;
+}
+.bordure-nav:hover > a {
+    color: #0065fc; 
 }
 .margLogo{
     margin-bottom: 7px;
@@ -118,6 +122,10 @@ body{
     color: white;
     cursor: pointer;
     border-radius: 0 10px 10px 0;
+}
+.buttonSearch:hover{
+    color: white;
+    background-color: #f2f2f2;
 }
 /*Filtres*/
 .margFiltre{
@@ -184,16 +192,36 @@ body{
     margin-left: 20px;
     border-radius: 10px;
 }
+.lienHebergementsColor{
+    color: black;
+}
+.lienDetailHebergements{
+    width: 100%;
+    height: auto;
+}
 .blocHebergements{
     padding-left: 10px;
     padding-right: 10px;
+}
+.bloc1{
+    margin-bottom: 10px;
+}
+.bloc2{
+    margin-top: 10px;
 }
 .cubeHebergements{
     background-color:white;
     width: 30%;
     height: auto;    
     padding: 1%;
-    border-radius: 20%;
+    border-radius: 10%;
+}
+.cubeHebergements:hover{
+    cursor: pointer;
+    transform: scaleX(1.1);
+}
+.cubDetailsHebergements{
+    width: 90%;
 }
 .imgHebergements1{
     background-image: url("./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
@@ -242,4 +270,200 @@ body{
     width: 100%;
     height: 120px;
     border-radius: 15px 15px 0 0;
+}
+/*Populaires*/
+.blocPopulaires{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.blocPopulaires12{
+    margin-bottom: 20px;
+}
+.lienPopulairesColor{
+    color: black;
+}
+.lienDetailPopulaires{
+    width: 100%;
+    height: auto;
+}
+.cubePopulaires{
+    background-color: white;
+    height: auto;
+    padding: 1% 0 1% 1% ;
+    border-radius: 20px;
+}
+.cubePopulaires:hover{
+    cursor: pointer;
+    transform: scaleX(1.05);
+}
+.cubeDetailsPopulaires{
+    width: 60%;
+    padding-left: 5%;
+}
+.imgPopulaires1{
+    background-image: url("./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    height: 160px;
+    border-radius: 15px 0 0 15px;
+}
+.imgPopulaires2{
+    background-image: url("./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    height: 160px;
+    border-radius: 15px 0 0 15px;
+}
+.imgPopulaires3{
+    background-image: url("./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    height: 160px;
+    border-radius: 15px 0 0 15px;
+}
+/*Activites*/
+.activites{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.blocActivites{
+    width: 100%;
+    min-height: 600px;
+}
+.blocActivites2356{
+    width: 23%;
+}
+/* reglage bloc*/
+.lienActivitesColor{
+    color: black;
+}
+.lienDetailActivites{
+    width: 100%;
+    height: auto;
+}
+.cubeActivites{
+    width: 23%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+.cubeActivites:hover{
+    cursor: pointer;
+    transform: scaleX(1.03);
+}
+.cubeActivites2356{
+    width: 100%;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+.cubeActivites2356:hover{
+    cursor: pointer;
+    transform: scaleX(1.03);
+}
+.cubemargin3{
+    margin-top: 60px;
+}
+/*fin reglage bloc*/
+.hauteurTitre{
+    height: 70px;
+}
+.titreActivites{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5%;
+    width: 95%;
+}
+.imgActivites1{
+    background-image: url("./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 530px;
+    border-radius: 15px 15px 0 0 ;
+}
+.imgActivites2{
+    background-image: url("./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+    border-radius: 15px 15px 0 0 ;
+}
+.imgActivites3{
+    background-image: url("./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 150px;
+    border-radius: 15px 15px 0 0 ;
+}
+.imgActivites4{
+    background-image: url("./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 530px;
+    border-radius: 15px 15px 0 0 ;
+}
+.imgActivites5{
+    background-image: url("./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 230px;
+    border-radius: 15px 15px 0 0 ;
+}
+.imgActivites6{
+    background-image: url("./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 230px;
+    border-radius: 15px 15px 0 0 ;
+}
+/*footer*/
+.footer{
+    height: 300px;
+    margin-top: 100px;
+}
+.taillesBlocFoot{
+    height: 150px;
+}
+.margeBlocFoot1{
+    margin-left: 5%;
+}
+.margeBlocfoot2{
+    margin-right: 5%;
+}
+.margeBlocFoot3{
+    margin-right: 15%;
+}
+.lienFoot{
+    color: black;
+}
+.divLienFoot{
+    height: 30px;
+}
+/*responsive*/
+@media screen and (max-width:1295px){
+    .sizeLien12{
+        margin-left: 35%;
+    }
+    .cubDetailsHebergements{
+        min-height: 150px;
+    }
+    .sizeHebergements{
+        min-height: auto;
+        padding: 20px;
+    }
+    .sizePopulaires{
+        min-height: auto;
+        padding: 20px;
+    }
+}
+@media screen and (max-width:990px){
+    
 }
