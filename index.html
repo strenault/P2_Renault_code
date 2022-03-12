@@ -3,26 +3,23 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />       
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https : //fonts.googleapis.com/css2?family= Raleway & display famille= Raleway:wght@400;500 & swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://kit.fontawesome.com/b91dd1d88d.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css"> 
         <title> Booki</title>    
     </head>
     <body>       
             <!--navigation-->
-        <nav class="sizeNav">
-            <div class="sizeLiens flexBetween">
+        <nav class="sizeNav padding">
+            <div class="sizeLiens flexBetween flexColumnQueries">
                 <div>
                 <p>
                 <img 
                 class="Bookilogo"
                 src="images/logo/Booki@3x.png" 
                 alt="logo Booki" 
-                width="120" 
-                height="50"
+                width= 99px; 
+                height= 81px;
                 />          
                 </p> 
                 </div> 
@@ -31,38 +28,39 @@
                     <div class="sizeLien flexCentre bordureNav">
                         <a class="colorLien2 decorationNone"href="#hebergements">Hébergements</a></div>
                     <div class="sizeLien flexCentre bordureNav">
-                        <a class="colorLien2 decorationNone"href="#activites">Activités</a>
-                    </div>
+                        <a class="colorLien2 decorationNone"href="#activites">Activités</a></div>
+                </div>
                 </div>                
         </nav> 
             <!--En-tête de page-->
-        <header>  
+        <header class="padding">  
             <section>
                 <div>
-                    <h1>Trouvez votre hébergements pour vos vacances de rêves</h1>
+                    <h1>Trouvez votre hébergements pour vos vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
                 <div class="bordureSearch flexCentre">
                     <div class="backGris flexCentre iconSize"><i class="fa-solid fa-location-dot"></i></div>
-                    <div class="recherche flexCentre bordureNone paddingSearch"><input type="search" value="Marseille , France"/></div>
-                    <div class="backBleu flexCentre buttonSearch">Rechercher</div>
+                    <div class=" flexCentre paddingSearch"><input type="search" class="recherche bordureNone" value="Marseille , France"/></div>
+                    <div id="rechercher" class="backBleu flexCentre buttonSearch">Rechercher</div>
+                    <div id="rechercherMobile" class="backBleu flexCentre buttonSearchMobile"><i class="fa-solid fa-magnifying-glass"></i></div>
                 </div> 
                 <div class="filtre margFiltre">                
-                    <div class="margFiltreTitre"><h3>Filtres</h3></div>
+                    <div class="margFiltreTitre"><p>Filtres</p></div>
                     <!--2 div flex-around pour séparer en mobile-->
                     <!--div1-->
-                    <div class="flexAround">
-                    <div class="flexBetween filtreTexteIcons">
+                    <div id="filtre1" class="flexAround">
+                    <div class="flexBetween filtreTexteIcons widthEconomique">
                         <i class="fa-solid fa-money-bill-wave fa-lg flexCentre filtreIcons"></i>
                         <div class="filtreTexte flexCentre ">Economique</div></div>
-                    <div class="flexBetween filtreTexteIcons">
+                    <div class="flexBetween filtreTexteIcons widthFamilial">
                         <i class="fa-solid fa-child fa-lg flexCentre filtreIcons"></i>
                         <div class="filtreTexte flexCentre ">Familial</div>
                     </div>
                     </div>
                     <!--div2-->
-                    <div class="flexAround">
-                    <div class="flexBetween filtreTexteIcons">
+                    <div id="filtre2" class="flexAround">
+                    <div class="flexBetween filtreTexteIcons widthRomantiques">
                         <i class="fa-solid fa-heart fa-lg flexCentre filtreIcons"></i>
                         <div class="filtreTexte flexCentre ">Romantique</div></div>
                     <div class="flexBetween filtreTexteIcons">
@@ -76,15 +74,16 @@
                 </div>              
             </section> 
         </header>
-        <section class="flexAround">
+        <main class="padding">
+        <section class="flexBetween flexColumnReverseAroundQueries">
             <div class="flexColumnAround sizeHebergements backGris blocHebergements">
-                <h2 id="hebergements" class="texteGras"> Hébergements à Marseille</h2>
-                <div class="bloc1 flexBetween">
+                <h2 id="hebergements" class="texteGras marginTitreHebergements "> Hébergements à Marseille</h2>
+                    <div class="bloc1 flexAround">
                     <div class="cubeHebergements flexColumnCentre"><a href="#" class="decorationNone lienHebergementsColor lienDetailHebergements">
                     <div class="imgHebergements1"></div>
                     <div class="cubDetailsHebergements">
-                        <h3>Auberge lA Cannebière</h3>
-                        <p>Nuit à partir de 25e</p>
+                        <p class="texteGras lineHeight">Auberge lA Cannebière</p>
+                        <p class="lineHeight">Nuit à partir de 25e</p>
                         <div><i class="fa-solid fa-star colorBleu"></i>
                             <i class="fa-solid fa-star colorBleu"></i>
                             <i class="fa-solid fa-star colorBleu"></i>
@@ -95,8 +94,8 @@
                 <div class="cubeHebergements flexColumnCentre"><a href="#" class="decorationNone lienHebergementsColor lienDetailHebergements">
                     <div class="imgHebergements2"></div>
                     <div class="cubDetailsHebergements">
-                        <h3>Hôtel du port</h3>
-                        <p>Nuit à partir de 52e</p>
+                        <p class="texteGras lineHeight">Hôtel du port</p>
+                        <p class="lineHeight">Nuit à partir de 52e</p>
                         <div><i class="fa-solid fa-star colorBleu"></i>
                             <i class="fa-solid fa-star colorBleu"></i>
                             <i class="fa-solid fa-star colorBleu"></i>
@@ -104,25 +103,25 @@
                             <i class="fa-solid fa-star colorBleu"></i></div>
                     </div>
                 </a></div>
-                <div class="cubeHebergements flexColumnCentre"><a href="#" class="decorationNone lienHebergementsColor lienDetailHebergements"></a>
+                <div class="cubeHebergements flexColumnCentre"><a href="#" class="decorationNone lienHebergementsColor lienDetailHebergements">
                     <div class="imgHebergements3"></div>
                     <div class="cubDetailsHebergements">
-                        <h3>Hôtel les mouettes</h3>
-                        <p>Nuit à partir de 76e</p>
+                        <p class="texteGras lineHeight">Hôtel les mouettes</p>
+                        <p class="lineHeight">Nuit à partir de 76e</p>
                         <div><i class="fa-solid fa-star colorBleu"></i>
                             <i class="fa-solid fa-star colorBleu"></i>
                             <i class="fa-solid fa-star colorBleu"></i>
                             <i class="fa-solid fa-star colorBleu"></i>
                             <i class="fa-solid fa-star colorGris"></i></div>
                     </div>
-                </div>                
+                </a></div>                
                 </div> 
-                <div class="bloc2 flexBetween">
+                <div class="bloc2 flexAround">
                     <div class="cubeHebergements flexColumnCentre"><a href="#" class="decorationNone lienHebergementsColor lienDetailHebergements">
                         <div class="imgHebergements4"></div>
                         <div class="cubDetailsHebergements">
-                            <h3>Hôtel de la mer</h3>
-                            <p>Nuit à partir de 46e</p>
+                            <p class="texteGras lineHeight">Hôtel de la mer</p>
+                            <p class="lineHeight">Nuit à partir de 46e</p>
                             <div><i class="fa-solid fa-star colorBleu"></i>
                                 <i class="fa-solid fa-star colorBleu"></i>
                                 <i class="fa-solid fa-star colorBleu"></i>
@@ -133,8 +132,8 @@
                     <div class="cubeHebergements flexColumnCentre"><a href="#" class="decorationNone lienHebergementsColor lienDetailHebergements">
                         <div class="imgHebergements5"></div>
                         <div class="cubDetailsHebergements">
-                            <h3>Auberge Le Panier</h3>
-                            <p>Nuit à partir de 23e</p>
+                            <p class="texteGras lineHeight">Auberge Le Panier</p>
+                            <p class="lineHeight">Nuit à partir de 23e</p>
                             <div><i class="fa-solid fa-star colorBleu"></i>
                                 <i class="fa-solid fa-star colorBleu"></i>
                                 <i class="fa-solid fa-star colorBleu"></i>
@@ -145,8 +144,8 @@
                     <div class="cubeHebergements flexColumnCentre"><a href="#" class="decorationNone lienHebergementsColor lienDetailHebergements">
                         <div class="imgHebergements6"></div>
                         <div class="cubDetailsHebergements">
-                            <h3>Hôtel chez Amina</h3>
-                            <p>Nuit à partir de 96e</p>
+                            <p class="texteGras lineHeight">Hôtel chez Amina</p>
+                            <p class="lineHeight">Nuit à partir de 96e</p>
                             <div><i class="fa-solid fa-star colorBleu"></i>
                                 <i class="fa-solid fa-star colorBleu"></i>
                                 <i class="fa-solid fa-star colorBleu"></i>
@@ -155,10 +154,10 @@
                         </div>    
                     </a></div>
                 </div>
-                <p class="texteGras">Afficher plus</p>
+                <p class="padding">Afficher plus</p>
             </div>
-            <div class="sizePopulaires blocPopulaires backGris">
-                <div class="flexBetween">
+            <div class="blocPopulaires margPopulaires backGris">
+                <div class="flexAround">
                     <h2 class="texteGras">Les plus populaires</h2>
                     <div><p><img src="images/logo/linechart_85917.png "
                         alt="linechart"
@@ -166,25 +165,25 @@
                         height="25">
                        </p></div>
                 </div>
-            <div class="flexColumnAround">
-                <div class="blocPopulaires12 cubePopulaires flexCentre">                    
+            <div class="flexColumnStart sizePopulaires flexAroundQueries">
+                <div class="margPopulaires1 cubePopulaires flexCentre">                    
                     <div class="imgPopulaires1"></div>
                     <div class="cubeDetailsPopulaires"><a href="#" class="decorationNone lienPopulairesColor lienDetailPopulaires">
-                        <h3>Hôtel le soleil du matin</h3>
-                        <p>Nuit à partir de 128e</p>
-                        <div><i class="fa-solid fa-star colorBleu"></i>
+                        <p class="texteGras lineHeightPopulaires">Hôtel le soleil du matin</p>
+                        <p class="lineHeightPopulaires">Nuit à partir de 128e</p>
+                        <div class="margintop"><i class="fa-solid fa-star colorBleu"></i>
                             <i class="fa-solid fa-star colorBleu"></i>
                             <i class="fa-solid fa-star colorBleu"></i>
                             <i class="fa-solid fa-star colorBleu"></i>
                             <i class="fa-solid fa-star colorBleu"></i></div>
                         </a></div>                  
                 </div>
-                <div class="blocPopulaires12 cubePopulaires flexCentre">
+                <div class="margPopulaires2 cubePopulaires flexCentre">
                     <div class="imgPopulaires2"></div>
                     <div class="cubeDetailsPopulaires"><a href="#" class="decorationNone lienPopulairesColor lienDetailPopulaires">
-                        <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                        <p>Nuit à partir de 71e</p>
-                        <div><i class="fa-solid fa-star colorBleu"></i>
+                        <p class="texteGras lineHeightPopulaires">Au coeur de l'eau Chambres d'hôtes</p>
+                        <p class="lineHeightPopulaires">Nuit à partir de 71e</p>
+                        <div class="margintop"><i class="fa-solid fa-star colorBleu"></i>
                             <i class="fa-solid fa-star colorBleu"></i>
                             <i class="fa-solid fa-star colorBleu"></i>
                             <i class="fa-solid fa-star colorBleu"></i>
@@ -194,9 +193,9 @@
                 <div class="cubePopulaires flexCentre">
                     <div class="imgPopulaires3"></div>
                     <div class="cubeDetailsPopulaires"><a href="#" class="decorationNone lienPopulairesColor lienDetailPopulaires">
-                        <h3>Hôtel tout bleu et blanc</h3>
-                        <p>Nuit à partir de 68e</p>
-                        <div><i class="fa-solid fa-star colorBleu"></i>
+                        <p class="texteGras lineHeightPopulaires">Hôtel tout bleu et blanc</p>
+                        <p class="lineHeightPopulaires">Nuit à partir de 68e</p>
+                        <div class="margintop"><i class="fa-solid fa-star colorBleu"></i>
                             <i class="fa-solid fa-star colorBleu"></i>
                             <i class="fa-solid fa-star colorBleu"></i>
                             <i class="fa-solid fa-star colorBleu"></i>
@@ -208,41 +207,43 @@
         </section>
         <section class="activites">
             <h2 id="activites">Activités à Marseille</h2>           
-            <div class="blocActivites flexBetween">
+            <div class="blocActivites flexBetween blocActivitesQueries">
+                <div class="bloc3">
                 <div class="cubeActivites flexColumnCentre"><a href="#" class="decorationNone lienActivitesColor lienDetailActivites">
                     <div class="imgActivites1"> </div>                    
-                    <div class="hauteurTitre titreActivites"><h3>Vieux Port</h3></div>
-                </a></div>           
+                    <div class="hauteurTitre titreActivites texteGras"><p>Vieux Port</p></div>
+                </a></div>          
                 <div class="blocActivites2356 fleColumnBetween">
-                    <div class="cubeActivites2356 flexColumnCentre"><a href="#" class="decorationNone lienActivitesColor lienDetailActivites">
+                    <div class="cubeActivites2 flexColumnCentre"><a href="#" class="decorationNone lienActivitesColor lienDetailActivites">
                         <div class="imgActivites2"> </div>                    
-                        <div class="hauteurTitre titreActivites"><h3>Fort de pomègues</h3></div>
-                
-                        <div class="cubeActivites2356 flexColumnCentre cubemargin3">
+                        <div class="hauteurTitre titreActivites texteGras"><p>Fort de pomègues</p></div></a></div>                
+                        <div class="cubeActivites3 flexColumnCentre cubeMargin3"><a href="#" class="decorationNone lienActivitesColor lienDetailActivites">
                         <div class="imgActivites3"></div>                    
-                        <div class="hauteurTitre titreActivites"><h3>Îles du Frioul</h3></div>
-                    </a></div>
-                    </div>
-                </div>  
-                <div class="cubeActivites flexColumnCentre"><a href="#" class="decorationNone lienActivitesColor lienDetailActivites">
+                        <div class="hauteurTitre titreActivites texteGras"><p>Îles du Frioul</p></div>
+                    </a></div></div>
+                </div>
+                <div class="bloc4">       
+                <div class="cubeActivites marginCube4 flexColumnCentre"><a href="#" class="decorationNone lienActivitesColor lienDetailActivites">
                     <div class="imgActivites4"> </div>                    
-                    <div class="hauteurTitre titreActivites"><h3>Parc Nationnal des Calanques</h3></div>
+                    <div class="hauteurTitre titreActivites texteGras"><p>Parc Nationnal des Calanques</p></div>
                 </a></div>           
                 <div class="blocActivites2356 fleColumnBetween">
-                    <div class="cubeActivites2356 flexColumnCentre"><a href="#" class="decorationNone lienActivitesColor lienDetailActivites">
+                    <div class="cubeActivites5 flexColumnCentre"><a href="#" class="decorationNone lienActivitesColor lienDetailActivites">
                         <div class="imgActivites5"> </div>                    
-                        <div class="hauteurTitre titreActivites"><h3>Notre-Dame-de-la-Garde</h3></div>
-                
-                        <div class="cubeActivites2356 flexColumnCentre">
+                        <div class="hauteurTitre titreActivites texteGras"><p>Notre-Dame-de-la-Garde</p></div>
+                    </a></div>                
+                    <div class="cubeActivites6 flexColumnCentre cubeMargin6"><a href="#" class="decorationNone lienActivitesColor lienDetailActivites">
                         <div class="imgActivites6"></div>                    
-                        <div class="hauteurTitre titreActivites"><h3>Parc Longchamp</h3></div>
+                        <div class="hauteurTitre titreActivites texteGras"><p>Parc Longchamp</p></div>
                     </a></div>
-                    </div>
+                </div>
                 </div>
             </div>
+            
         </section>
+        </main>
         <footer>
-            <div class="footer backGris flexBetween">
+            <div class="footer backGris flexStart">
                 <div class="margeBlocFoot1 tailleBlocFoot">
                     <h3>A propos</h3>
                     <div class="divLienFoot"><a href="#"class="decorationNone lienFoot">Fonctionnement du site</a></div>
@@ -256,7 +257,7 @@
                 </div>
                 <div class="margeBlocFoot3 tailleBlocFoot">
                     <h3>Assistance</h3>
-                    <div class="divLienFoot"><a href="#"class="decorationNone lienFoot">Centre d'aide</a></div>
+                    <div class="divLienFoot"><a href="#"class="decorationNone ">Centre d'aide</a></div>
                     <div class="divLienFoot"><a href="#"class="decorationNone lienFoot">Nous contacter</a></div>   
                 </div>
             </div>
