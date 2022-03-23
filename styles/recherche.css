@@ -54,6 +54,7 @@
 #rechercher-mobile{
     display: none;
 }
+/*-------------------------media--media--media---queries---queries--queries---------------------*/
 @media only all and (max-width: 768px){
     #titre h1{
         font-size: 28px;
@@ -140,7 +141,7 @@
         font-size: 18px;
     }
 }
-@media only all and (max-width: 281px){
+@media only all and (max-width: 381px){
     .wrapper{
         padding: 0 5px;
     }

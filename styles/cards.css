@@ -1,6 +1,7 @@
 .hebergementsPopulaires{
     display: flex;
     justify-content: space-between;
+    max-width: 1440px;
     flex-basis: auto;
     flex-shrink: 2;
     margin-bottom: 5%;
@@ -226,6 +227,7 @@
 .activitesBox{
     display: flex;
     flex-direction: column;
+    max-width: 1440px;
     flex-basis: auto;
     flex-shrink: 2;
 }
@@ -373,7 +375,7 @@
     height: 120px;
     border-radius: 15px 15px 0 0;
 }
-/*--------------media----------------*/
+/*-------------------------media--media--media---queries---queries--queries---------------------*/
 @media only all and (max-width: 1183px){
     .blocActivites1,
     .blocActivites4,
@@ -383,6 +385,9 @@
     .cubeActivites5,
     .cubeActivites6{
         width: 190px;
+    }
+    .populairesBox{
+        font-size: 12px;
     }
 }
 @media only all and (max-width: 944px){
@@ -401,9 +406,6 @@
 }
 @media only all and (max-width: 927px){
     .hebergementsBox{
-        font-size: 12px;
-    }
-    .populairesBox{
         font-size: 12px;
     }
 }
